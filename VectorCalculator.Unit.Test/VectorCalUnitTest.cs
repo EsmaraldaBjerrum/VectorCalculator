@@ -88,13 +88,13 @@ namespace VectorCalculator.Unit.Test
             Assert.That(uut.DotVec(A, B), Is.EqualTo(12).Within((Double.Epsilon)));
         }
 
-        [Test]
-        public void AngleVec_ax0y3Andax3y0_Is90()
-        {
-            Vector A = new Vector(0,3);
-            Vector B = new Vector(3,0);
+        //[Test]
+        //public void AngleVec_ax0y3Andax3y0_Is90()
+        //{
+        //    Vector A = new Vector(0,3);
+        //    Vector B = new Vector(3,0);
             
-            Assert.That(uut.AngleVec(A, B), Is.EqualTo(90).Within(Double.Epsilon));
-        }
+        //    Assert.That(uut.AngleVec(A, B), Is.EqualTo(90).Within(Double.Epsilon));
+        //}
     }
 }
